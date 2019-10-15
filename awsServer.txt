@@ -1,0 +1,47 @@
+dacstudent@KDTDACWS-07:~$ cd Downloads
+
+dacstudent@KDTDACWS-07:~/Downloads$ sudo ssh -i "AwsExamQ1.pem" ubuntu@ec2-13-233-251-35.ap-south-1.compute.amazonaws.com
+
+sudo apt-get update
+
+ubuntu@ip-172-31-4-238:~$ sudo apt-get install mysql-server
+
+ubuntu@ip-172-31-4-238:~$ sudo service mysql start 
+
+
+
+ubuntu@ip-172-31-4-238:~$ sudo apt install default-jre
+
+ubuntu@ip-172-31-4-238:~$ touch Hello.java
+ubuntu@ip-172-31-4-238:~$ nano Hello.java
+ubuntu@ip-172-31-4-238:~$ cat Hello.java
+public class Hello
+{
+public static void main(String[] args)
+{
+System.out.println("Hello World...");
+}
+}
+
+
+ubuntu@ip-172-31-4-238:~$ java Hello.java
+Hello World...
+
+
+sudo apt install docker.io
+
+docker -v
+
+sudo systemctl start docker
+
+ sudo systemctl enable docker
+
+sudo docker images --all
+sudo docker pull hello-world
+
+
+
+sudo docker images
+
+dounload containers :
+sudo docker run --name docker-nginx -p 80:80 nginx
